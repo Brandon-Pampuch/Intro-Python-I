@@ -1,7 +1,5 @@
 """
-Python exposes a terse and intuitive syntax for performing 
-slicing on lists and strings. This makes it easy to reference
-only a portion of a list or string. 
+
 
 This Stack Overflow answer provides a brief but thorough
 overview: https://stackoverflow.com/a/509295
