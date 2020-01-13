@@ -22,5 +22,27 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+import re
 
-print(calendar.isleap(2020))
+
+def cal(input=1):
+
+    if(input == 1):
+        x = datetime.now().month
+        print(x)
+    elif(input):
+        array = input.split(" ")
+        print(array)
+        if(len(array) == 2):
+            c = calendar.TextCalendar()
+            str = c.formatmonth(datetime.now().year, int(array[1]))
+            print(str)
+        elif(len(array) == 3):
+            c = calendar.TextCalendar()
+            str = c.formatmonth(int(array[2]), int(array[1]), 0, 0)
+            print(str)
+        elif(len(array) > 3):
+            print('out of bounds')
+
+
+cal('14_cal.py 1 1')
